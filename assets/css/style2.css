@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    background-image: url("../images/so-white.png");
+    position: relative;
+}
+
+.body {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.center {
+    border-bottom: 2px solid #cccccc;
+    margin-bottom: 40px;
+    background-color: #ffffff;
+}
+
+.header {
+    margin: 0 auto;
+    width: 960px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    background-color: #ffffff;
+}
+
+.name {
+    float: left;
+    background-color: teal;
+    color: #ffffff;
+    padding: 30px;
+    font-size: 2em;
+    margin-right: 476px;
+}
+
+.button {
+    display: flex;
+    padding-top: 20px;
+    font-family: 'Arial', sans-serif;
+    color: #777777;
+    font-size: 1.1em;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: teal;
+}
+
+a:visited {
+    color: teal;
+}
+
+a:hover {
+    color: #777777;
+}
+
+.about {
+    flex: 1;
+    margin: 10px;
+    padding-right: 15px;
+    border-right: 1px solid #dddddd;
+}
+
+.portfolio {
+    flex: 1;
+    margin: 10px;
+    padding-right: 15px;
+    border-right: 1px solid #dddddd;
+}
+
+.contact {
+    flex: 1;
+    margin: 10px;
+}
+
+.aboutme {
+    border: 1px solid #dddddd;
+    overflow: hidden;
+    padding: 30px;
+    color: #777777;
+    background-color: #ffffff;
+}
+
+h1 {
+    color: teal;
+    border-bottom: 3px solid #dddddd;
+    padding-bottom: 20px;
+    margin-top: 0px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 30px;
+    font-size: 2em;
+}
+
+.small1, .small2 {
+    float: left;
+    margin-right: 5%;
+    position: relative;
+    margin-bottom: 50px;
+    width: 35%;
+}
+
+.small1 img, .small2 img {
+    width: 250px;
+}
+
+.small1 p, .small2 p {
+    background-color: teal;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+    position: absolute;
+    top: 270px;
+    width: 250px;
+}
+
+.small2 p {
+    top: 205px;
+}
+
+footer {
+    border-top: 4px solid teal;
+    margin-top: 40px;
+    background-color: #666666;
+    text-align: center;
+    padding: 8px;
+    height: 40px;
+    position: sticky;
+    bottom: 0px;
+    width: 100%;
+}
