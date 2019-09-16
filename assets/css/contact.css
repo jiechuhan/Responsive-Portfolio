@@ -5,82 +5,56 @@
 body {
     margin: 0px;
     background-image: url("../images/so-white.png");
-    position: relative;
 }
 
-.body {
-    width: 960px;
+.bigbox {
+    max-width: 960px;
     margin: 0 auto;
 }
 
-.center {
+.header {
     border-bottom: 2px solid #cccccc;
     margin-bottom: 40px;
     background-color: #ffffff;
 }
 
-.header {
-    margin: 0 auto;
-    width: 960px;
-    font-family: 'Georgia', serif;
-    overflow: hidden;
-    position: sticky;
-    top: 0;
-    background-color: #ffffff;
-}
-
 .name {
-    float: left;
     background-color: teal;
     color: #ffffff;
-    padding: 30px;
-    font-size: 2em;
-    margin-right: 476px;
+    font-size: 1.8em;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 100%;
+    display: inline-flex;
+    padding: 30px;
 }
 
-.button {
-    display: flex;
-    padding-top: 20px;
-    font-family: 'Arial', sans-serif;
-    color: #777777;
-    font-size: 1.1em;
+#navbarTogglerDemo02 {
+    padding-top: 2vh;
 }
 
-a {
+.chuhan {
+    float: right;
+    margin-right: 48%;
+}
+
+.nav-link {
     text-decoration: none;
-}
-
-a:link {
     color: teal;
+    font-family: 'Arial', sans-serif;
+    border-right: 1px solid #dddddd;
+    font-size: 1.01em;
 }
 
-a:visited {
-    color: teal;
-}
-
-a:hover {
+a.nav-link:hover {
     color: #777777;
 }
 
-.about {
-    flex: 1;
-    margin: 10px;
-    padding-right: 15px;
-    border-right: 1px solid #dddddd;
-}
 
-.portfolio {
-    flex: 1;
-    margin: 10px;
-    padding-right: 15px;
-    border-right: 1px solid #dddddd;
-}
 
-.contact {
-    flex: 1;
-    margin: 10px;
-}
+
+
+
+
 
 .aboutme {
     border: 1px solid #dddddd;
@@ -136,7 +110,33 @@ footer {
     text-align: center;
     padding: 8px;
     height: 40px;
-    position: fixed;
-    bottom: 0px;
     width: 100%;
+    position: sticky;
+    bottom: 0px;
 }
+
+@media only screen and (max-width: 980px) {
+    .chuhan {
+        margin-right: 31%;
+    }
+  }
+
+
+@media only screen and (max-width: 640px) {
+    .chuhan {
+        width: 100%;
+        float: none;
+        background-color: teal;
+        margin-right: 0%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .navbar {
+        margin: 0 auto;
+    }
+
+    span {
+        justify-content: center;
+    }
+  }

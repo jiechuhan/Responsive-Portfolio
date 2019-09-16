@@ -49,6 +49,10 @@ a.nav-link:hover {
     color: #777777;
 }
 
+
+
+
+
 .aboutme {
     border: 1px solid #dddddd;
     overflow: hidden;
@@ -67,11 +71,30 @@ a.nav-link:hover {
     font-size: 2em;
 }
 
-.aboutme p {
-    font-size: 1.1em;
-    line-height: 1.5em;
-    font-family: 'Arial', sans-serif;
-    padding-bottom: 10px;
+.small1, .small2 {
+    float: left;
+    margin-right: 5%;
+    position: relative;
+    margin-bottom: 3vh;
+    width: 35%;
+}
+
+.small1 img, .small2 img {
+    width: 100%;
+}
+
+.small1 p, .small2 p {
+    background-color: teal;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+    position: absolute;
+    top: 270px;
+    width: 100%;
+}
+
+.small2 p {
+    top: 205px;
 }
 
 footer {
@@ -92,6 +115,11 @@ footer {
     }
   }
 
+@media only screen and (max-width: 768px) {
+    .small2 p{
+        top: 170px;
+    }
+}
 
 @media only screen and (max-width: 640px) {
     .chuhan {
@@ -102,12 +130,30 @@ footer {
         margin: 0 auto;
         text-align: center;
     }
-    
+
     .navbar {
         margin: 0 auto;
+    }
+
+    .small1, .small2 {
+        float: none;
+        width: 100%;
+        margin: 3vh auto;
+    }
+
+    .small1 p {
+        top: 511px;
+    }
+
+    .small2 p{
+        top: 348px;
+    }
+    
+    .conceptual p {
+        top: 250px
     }
 
     span {
         justify-content: center;
     }
-  }
+}

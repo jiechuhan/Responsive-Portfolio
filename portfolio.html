@@ -1,47 +1,75 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Portfolio</title>
-        <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-        <link rel="stylesheet" type="text/css" href="assets/css/style2.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="assets/css/portfolio.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.4.1.js" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.js" crossorigin="anonymous"></script>
     </head>
-
+    
     <body>
-        <div class="center">
-            <div class="header">
-                <div class="name">Chuhan Jie</div>
-                <div class="button">
-                    <div class="about"><a href="index.html">About</a></div>
-                    <div class="portfolio"><a href="portfolio.html">Portfolio</a></div>
-                    <div class="contact"><a href="contact.html">Contact</a></div>
+        <div class="header">
+            <div class="bigbox">
+                <div class="container">
+                    <div class="row">
+                        <div class="chuhan">
+                            <span class="name">Chuhan Jie</span>
+                        </div>
+
+                        <nav class="navbar navbar-expand-lg navbar-expand-sm navbar-light justify-content-end">
+                            <div id="navbarTogglerDemo02">
+                                <ul class="nav mr-auto mt-2 mt-lg-0">
+                                    <li class="nav-item ">
+                                        <a class="nav-link" href="index.html">About <span class="sr-only">(current)</span></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="portfolio.html">Portfolio</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="contact.html" tabindex="-1" aria-disabled="true">Contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-
-        <div class="body">
-            <div class="aboutme">
-                <h1>Portfolio</h1>
-                <div class="gallery">
-                    <div class="small1">
-                        <img src="assets/images/self.jpg">
-                        <p>Chuhan Jie</p>
-                    </div>
-                    <div class="small1">
-                        <a href="http://www.j465.com/wp-content/uploads/2017/03/Influence.pdf" target="_blank"><img src="assets/images/influence.jpg"></a>
-                        <p>Influence poster</p>
-                    </div>
-                    <div class="small2">
-                        <a href="http://www.j465.com/wp-content/uploads/2017/04/Conceptual-finished.pdf" target="_blank"><img src="assets/images/conceptual.jpg"></a>
-                        <p>Conceptual poster</p>
-                    </div>
-                    <div class="small2">
-                        <a href="http://www.j465.com/wp-content/uploads/2017/02/Logo_Jie-1.pdf" target="_blank"><img src="assets/images/logo.jpg"></a>
-                        <p>Logo poster</p>
+        
+        <div class="bigbox">    
+            <div class="container">
+                <div class="aboutme">
+                    <h1>Portfolio</h1>
+                    <div class="gallery">
+                        <div class="small1">
+                            <img src="assets/images/self.jpg">
+                            <p>Chuhan Jie</p>
+                        </div>
+                        <div class="small1">
+                            <a href="http://www.j465.com/wp-content/uploads/2017/03/Influence.pdf" target="_blank"><img src="assets/images/influence.jpg"></a>
+                            <p>Influence poster</p>
+                        </div>
+                        <div class="small2 conceptual">
+                            <a href="http://www.j465.com/wp-content/uploads/2017/04/Conceptual-finished.pdf" target="_blank"><img src="assets/images/conceptual.jpg"></a>
+                            <p>Conceptual poster</p>
+                        </div>
+                        <div class="small2 logo">
+                            <a href="http://www.j465.com/wp-content/uploads/2017/02/Logo_Jie-1.pdf" target="_blank"><img src="assets/images/logo.jpg"></a>
+                            <p>Logo poster</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
         <footer></footer>
+        
     </body>
 </html>
